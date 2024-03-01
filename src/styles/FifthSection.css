@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.fifth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.fifth-first {
+    margin: 100px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.fifth-second {
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Adjust max-width as needed */
+}
+
+.fifth-second p {
+    margin-bottom: 10px;
+    text-align: left;
+    background-color: rgba(20, 187, 107, 0.316);
+    padding: 15px 20px;
+    font-weight: bold;
+}

@@ -1,0 +1,49 @@
+/* Base styles */
+.navbar {
+  background-color: rgba(9, 102, 57, 1);
+  color: #fff;
+  padding: 10px 100px; /* Adjust padding for smaller screens */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0; 
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+
+
+.navbar button {
+  padding: 10px 20px; 
+  border-radius: 5px;
+  border: none;
+}
+
+.navbar button svg {
+  margin-left: 5px;
+}
+
+.navbar button .add {
+  color: red;
+}
+
+/* Media Query for responsiveness */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .navbar ul li {
+    display: none; 
+    margin-right: 20px;
+    margin-bottom: 0; 
+  }
+  }
+

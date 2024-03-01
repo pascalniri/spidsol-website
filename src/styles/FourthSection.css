@@ -1,0 +1,78 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for the fourth section */
+.fourth {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 130, 67, 0.248);
+    padding: 50px;
+}
+
+.fourth-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.fourth-second {
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 550px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+    padding: 50px 20px 20px 20px;
+    border-radius: 10px;
+    margin: 50px 10px;
+    background: linear-gradient(to bottom, rgba(0, 130, 67, 0.248), rgba(255, 255, 255, 1));
+}
+
+.fourth-heading img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.fourth-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fourth-heading svg {
+    color: rgba(9, 102, 57, 1);
+}
+
+.fourth-subcontainer p {
+    margin: 20px 0;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+.quote {
+    font-size: 60px; /* Adjust font size for smaller screens */
+    color: green;
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+    .fourth-second {
+        width: 90%;
+        padding: 40px 15px 15px 15px; /* Adjust padding for smaller screens */
+        margin: 30px 10px; /* Adjust margin for smaller screens */
+    }
+
+    .fourth-heading img {
+        width: 60px; /* Adjust image size for smaller screens */
+        height: 60px;
+    }
+
+    .quote {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+}
