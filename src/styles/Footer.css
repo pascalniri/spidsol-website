@@ -1,61 +1,81 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.all {
+    background: linear-gradient(rgba(0, 0, 0, 0.925), rgb(21, 141, 83), rgba(0, 0, 0, 0.925));
+    padding: 10px 100px;
+    color: white;
 }
 
 .footer {
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(50, 245, 112, 0));
-  }
-.footer-col-one{
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    width: 100%;
-    padding: 50px;
 }
-.email-button input{
-    padding: 10px 10px;
+
+.footer h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-col-one,
+.footer-col-two,
+.footer-col-three,
+.footer-col-four {
+    flex: 1; /* Each column takes up equal space */
+    margin: 10px;
+    padding: 10px;
+    font-size: 13px;
+    text-align: left; /* Align text to the left */
+}
+
+.email-button input {
+    padding: 10px;
     outline: none;
     border: none;
     border-radius: 10px;
-    margin-top: 40px;
+    margin-top: 10px;
 }
-.email-button{
+
+.email-button {
     display: flex;
-
 }
 
-.footer-col-two {
-    margin: 10px;
+.platforms {
     display: flex;
-    flex-direction: column;
-    
-    align-items: left;
-    width: 100%;
-    padding: 10px;
+    gap: 20px;
+    margin-top: 20px;
 }
 
-.footer-col-three{
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    
-    align-items: left;
-    width: 100%;
-    padding: 10px;
+.contact {
+    font-size: 13px;
+    line-height: 20px;
 }
 
-.footer-col-four{
-    margin: 10px;
+.contact span {
+    margin-left: 20px;
+}
+
+.footer-end {
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
     align-items: center;
+}
+
+.line {
+    margin-top: 20px;
     width: 100%;
-    padding: 10px;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+        align-items: center;
+    }
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import FirstSection from './components/FirstSection'
-import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -9,7 +8,6 @@ const App = () => {
         <Routes>
             
             <Route path="/" element={ <FirstSection />}></Route>
-            <Route path="/footer" element={  <Footer /> }></Route>
             
         </Routes>
     </BrowserRouter>
