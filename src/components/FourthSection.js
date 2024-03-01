@@ -75,10 +75,19 @@ import 'swiper/css/scrollbar';
 
 export default () => {
   return (
-    <Swiper
+    <div className='fourth-all'>
+      <div className='fourth-first'>
+         <h1>Testimonials That <br></br> speak to Our Results</h1>
+         <p>
+           Explore the positive experiences of our customers with Spid Solutions.
+           Road their stories about the reliability and satisfaction they`ve found in ourservives. Your trust is our motivation, and we`re delighted
+           to share what people are saying about us.
+         </p>
+       </div>
+    <Swiper className='fourth'
       // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
-      spaceBetween={50}
+      // spaceBetween={10}
       slidesPerView={2}
       navigation
       pagination={{ clickable: true}}
@@ -101,6 +110,7 @@ export default () => {
 
     >
       <SwiperSlide>
+      
         <div className='fourth-second'>
                   <div className='fourth-subcontainer'>
                        <div className='fourth-heading'>
@@ -235,5 +245,6 @@ export default () => {
 
       ...
     </Swiper>
+    </div>
   );
 };
