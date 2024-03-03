@@ -34,9 +34,11 @@ class Header extends Component{
                     <option><a href='#'>Caretaker</a></option>
                   </select>
                 </li>
-              <li><a href='#'>Blog</a></li>
-              <li><a href='#'>About</a></li>
-              <li><a href='#'>Content</a></li>
+                <li><a href='#'>Pricing</a></li>
+
+              <li><a href='#'>About Us</a></li>
+              <li><a href='#'>Career</a></li>
+              <li><a href='#'>Contact</a></li>
               <li id='language-two'>
                 <select  style={{padding:'10px 15px', border:'none', outline:'none', borderRadius:'5px'}}>          
                    <option>English</option>
