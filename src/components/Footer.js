@@ -1,13 +1,11 @@
 import React from 'react'
 import "../styles/Footer.css"
 import { MdArrowForwardIos } from "react-icons/md";
-import { MdEmail } from "react-icons/md";
-import { MdWifiCalling3 } from "react-icons/md";
-import { FaLinkedin } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-
-
+import gmail from "../images/gmail.png"
+import call from "../images/call.jpg"
+import linkedin from "../images/linkedin.jpg"
+import x from "../images/x.avif"
+import ig from "../images/ig.jpeg"
 const Footer = () => {
   return (
     <div className='all'>
@@ -21,7 +19,7 @@ const Footer = () => {
           know about new services and exciting promotions.
          </p>
          <div className='email-button'>
-              <input type='email' placeholder='Email'/>
+              <input type='email' placeholder='Email'/><input type='button' value="->" />
 
          </div>
 
@@ -52,16 +50,16 @@ const Footer = () => {
            <p>Join our newsletter to receive exclusive updates, special
             offers.
             </p>
-            <p><MdEmail /> <span>spidsolutions@gmail.com</span></p>
-            <p><MdWifiCalling3 /> <span>+250 784 673 524 <br/>+243 973 451 195</span></p>
+            <p><img src={gmail}/><span>spidsolutions@gmail.com</span></p>
+            <p><img src={call} /><span>+250 784 673 524<br/>+243 973 451 195</span></p>
         </div>
         <hr className='line'/>
         <div className='platforms'>
             <p>Spidsolutions</p>
             <div className='plat-icons'>
-              <FaLinkedin />
-              <FaInstagram />
-              <FaXTwitter />
+              <img src={linkedin} />
+              <img src={ig} />
+              <img src={x} />
             </div>
           </div>
           </div>

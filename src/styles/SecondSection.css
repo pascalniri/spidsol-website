@@ -4,7 +4,7 @@
   align-items: center;
   min-height: 100vh;
   padding: 0px 100px; /* Adjust padding for smaller screens */
-  gap: 20px; /* Adjust gap for smaller screens */
+  gap: 20px; 
 }
 
 .intro {
@@ -45,12 +45,19 @@ button:hover {
 /* Media Query for responsiveness */
 @media screen and (max-width: 768px) {
   .first {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       flex-direction: column;
       padding: 20px;
+      text-align: center;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      margin-bottom: 100px;
   }
 
   .intro h1 {
-      font-size: 1.5rem; 
+      font-size: 2rem; 
       display: flex;
       align-items: center;
       justify-content: center;
@@ -63,9 +70,7 @@ button:hover {
       align-items: center;
       justify-content: center;
   }
-
-  .intro-btn button {
-      font-size: 0.9rem;
-      padding: 8px 15px; 
+  .intro-img{
+      display: none;
   }
 }

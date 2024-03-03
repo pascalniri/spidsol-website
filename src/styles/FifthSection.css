@@ -21,13 +21,23 @@
 
 .fifth-second {
     width: 80%; /* Adjust width as needed */
-    max-width: 600px; /* Adjust max-width as needed */
+    max-width: 600px;
+    text-align: left;
 }
 
-.fifth-second p {
+.faqs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 10px;
     text-align: left;
     background-color: rgba(20, 187, 107, 0.316);
     padding: 15px 20px;
     font-weight: bold;
+    gap: 100px;
+}
+.faqs svg{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
 }

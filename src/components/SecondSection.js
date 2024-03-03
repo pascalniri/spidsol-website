@@ -8,7 +8,7 @@ const SecondSection = () => {
       <div className='first'>
          <div className='intro'>
             <h1 >Welcome to Spid Solutions</h1>
-            <h1 style={{ color: 'rgba(244, 148, 6, 1)' }}>Your Trusted Household</h1>
+            <h1 style={{ color: 'rgba(244, 148, 6, 1)'}}>Your Trusted Household</h1>
             <h1>Services</h1>
 
             <p>

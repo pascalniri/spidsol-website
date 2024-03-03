@@ -1,49 +1,92 @@
-/* Base styles */
-.navbar {
-  background-color: rgba(9, 102, 57, 1);
-  color: #fff;
-  padding: 10px 100px; /* Adjust padding for smaller screens */
+nav{
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  background-color: rgba(9, 102, 57, 1);
+  padding:  20px 100px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+  position: fixed;
+  width: 100%;
+}
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+#navbar li a{
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+#navbar li a:hover{
+color: rgb(21, 141, 83);
+}
+#navbar li a:hover::after{
+ content: "";
+ width: 30%;
+ height: 2px;
+ background: rgb(21, 141, 83);
+ position:absolute;
+ bottom: -4px;
+ left: 20px;
+}
+
+#mobile{
+  display: none;
+}
+#mobile{
+  color: white;
   align-items: center;
 }
-
-.logo h1 {
-  margin: 0; 
+.language-one{
+  display: none;
 }
-
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-}
-
-
-
-.navbar button {
-  padding: 10px 20px; 
-  border-radius: 5px;
-  border: none;
-}
-
-.navbar button svg {
-  margin-left: 5px;
-}
-
-.navbar button .add {
-  color: red;
-}
-
-/* Media Query for responsiveness */
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  .navbar ul li {
-    display: none; 
-    margin-right: 20px;
-    margin-bottom: 0; 
+@media screen and (max-width:765px){
+  nav{
+    padding: 15px 30px;
+    margin-top: -2px;
+    top: 0;
+    
   }
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 53px;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background: rgba(9, 102, 57, 1);
+    padding: 40px 0 0 10px;
+    transition: 0.3s ease-in-out;
   }
-
+  #navbar.active{
+    right: 0px;
+  }
+  #navbar li{
+    margin-bottom: 25px;
+  }
+  #mobile{
+    display: block;
+  }
+  #mobile i{
+    font-size: 24px;
+    cursor: pointer;
+  }
+  #language-two{
+    display: none;
+  }
+  .language-one{
+    display: block;
+    padding: 5px 10px;
+    /* font-size: 5px; */
+  }
+}
