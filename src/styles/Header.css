@@ -70,7 +70,7 @@ color: rgb(21, 141, 83);
     transition: 0.3s ease-in-out;
   }
   .logo{
-    margin-left: 100px;
+    margin-left: 85px;
   }
   #navbar.active{
     left: 0px;
